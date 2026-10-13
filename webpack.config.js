@@ -8,13 +8,13 @@ export default {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'), // <--- Cambiado de 'dist' a 'docs'
     filename: 'bundle.js',
   },
   devServer: {
     static: [
       {
-        directory: path.resolve(__dirname, 'dist'),
+        directory: path.resolve(__dirname, 'docs'), // <--- Cambiado de 'dist' a 'docs'
       },
       {
         directory: path.resolve(__dirname, 'public'),
